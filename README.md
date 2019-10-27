@@ -18,7 +18,7 @@ SpringCloud是一个分布式的整体解决方案，Spring Cloud为开发者提
 注册中心，服务提供者，服务消费者
 
 **1，注册中心(eureka-server)**<br/>
-      1，新建Spring项目，SpringBoot2.1.9再勾选上**Eureka Server**
+      1，新建Spring项目，SpringBoot2.1.9再勾选上**Eureka Server**<br/>
       2，编写application.yml
 ```
 server:  
@@ -50,8 +50,8 @@ public class EurekaServerApplication {
 ```
 可以先启动访问[http://localhost:8761/](http://localhost:8761/)这个地址可以看到一个SpringEureka的注册中心页面
 
-**2，再新建一个服务提供者（provider-ticket）**
-1，同样是新建一个spring 2.1.9的项目再勾选上**Eureka Discovery**
+**2，再新建一个服务提供者（provider-ticket）**<br/>
+1，同样是新建一个spring 2.1.9的项目再勾选上**Eureka Discovery**<br/>
 2，编写配置文件application.yml
 ```
 server:  
@@ -94,8 +94,8 @@ public class TicketController {
 ```
 然后我们可以可以先启动看看如果启动没有错报的情况下可以看SpringEureka的页面多了一个服务提供者
 
-**3，服务消费者（consunmer-user）**
-1，新建一个spring模板项目，版本2.1.9勾选上Eureka Discovery
+**3，服务消费者（consunmer-user）**<br/>
+1，新建一个spring模板项目，版本2.1.9勾选上Eureka Discovery<br/>
 2，编写application.yml文件
 ```
 spring:  
@@ -147,9 +147,9 @@ public class ConsunmerUserApplication {
 }
 ```
 **4，测试**
-1，运行Eureka-server
-2，provider-ticket【8002执行】(端口改为8001打成jar包，方便测试)；
-把jar包放在桌面执行命令:(分别执行8001端口和8002)
+1，运行Eureka-server<br/>
+2，provider-ticket【8002执行】(端口改为8001打成jar包，方便测试)；<br/>
+把jar包放在桌面执行命令:(分别执行8001端口和8002)<br/>
 ```
 java -jar provider-ticket-0.0.1-SNAPSHOT-8001.jar
 ```	
