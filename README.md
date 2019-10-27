@@ -146,7 +146,7 @@ public class ConsunmerUserApplication {
     }  
 }
 ```
-**4，测试**
+**4，测试**<br/>
 1，运行Eureka-server<br/>
 2，provider-ticket【8002执行】(端口改为8001打成jar包，方便测试)；<br/>
 把jar包放在桌面执行命令:(分别执行8001端口和8002)<br/>
