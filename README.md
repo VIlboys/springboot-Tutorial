@@ -17,7 +17,7 @@ SpringCloud是一个分布式的整体解决方案，Spring Cloud为开发者提
 多个A服务调用多个B服务，负载均衡
 注册中心，服务提供者，服务消费者
 
-**1，注册中心(eureka-server)**
+**1，注册中心(eureka-server)**<br/>
       1，新建Spring项目，SpringBoot2.1.9再勾选上**Eureka Server**
       2，编写application.yml
 ```
